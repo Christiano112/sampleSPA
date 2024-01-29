@@ -1,11 +1,11 @@
-import Emmy from "./emmy";
+import Cards from "./card";
+import "./index.css";
 
-export default function Root(props) {
-  const myName = "Christiano";
+export default function Root() {
   return (
-    <section>
-      {props.name} is mounted! Home Page
-      <Emmy name={myName} />
+    <section className="container bg-secondary">
+      <h1 className="title">OctoSpa Users</h1>
+      <Cards />
     </section>
   );
 }
